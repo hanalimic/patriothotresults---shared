@@ -1,7 +1,7 @@
 {
   "name": "patriotshotresults---shared",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
@@ -49,5 +49,17 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7"
-  }
+  },
+  "description": "Patriots Hot Result shared components, servces, interfaces etc.",
+  "main": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanalimic/patriothotresults---shared.git"
+  },
+  "author": "Karlo Vidaković",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanalimic/patriothotresults---shared/issues"
+  },
+  "homepage": "https://github.com/hanalimic/patriothotresults---shared#readme"
 }
