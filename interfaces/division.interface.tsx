@@ -4,3 +4,7 @@ export interface IDivision {
   gender: string,
   level: string
 }
+
+export interface DivisionParams {
+  divisionId: string;
+}

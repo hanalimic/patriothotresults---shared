@@ -8,8 +8,11 @@ import { Sponsors } from "./components/index";
 
 //import interfaces
 import { IDivision } from "./interfaces/index";
+import { DivisionParams } from "./interfaces/index";
 import { IMatch } from "./interfaces/index";
+import { Tournament } from "./interfaces/index";
 import { TournamentParams } from "./interfaces/index";
+import { ILoginCredentials } from "./interfaces/index";
 
 // import services
 import { divisionService } from "./services/index";
@@ -27,8 +30,11 @@ export { Sponsors };
 
 // export interfaces
 export { IDivision };
+export { DivisionParams };
 export { IMatch };
+export { Tournament };
 export { TournamentParams };
+export { ILoginCredentials };
 
 // export services
 export { divisionService };
