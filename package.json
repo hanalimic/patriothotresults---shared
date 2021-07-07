@@ -1,6 +1,6 @@
 {
   "name": "patriotshotresults---shared",
-  "version": "1.4.6",
+  "version": "1.4.7",
   "private": false,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
