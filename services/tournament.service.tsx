@@ -1,7 +1,7 @@
 import React from 'react';
 import axios, { AxiosRequestConfig } from 'axios';
 export class TournamentService {
-  BASE_URL: string;
+  BASE_URL: string | undefined;
   constructor(REACT_APP_BASE_API_URL: string | undefined) {
     console.log('TournamentService REACT_APP_BASE_API_URL: ', REACT_APP_BASE_API_URL);
     this.BASE_URL = REACT_APP_BASE_API_URL;

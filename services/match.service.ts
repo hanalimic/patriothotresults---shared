@@ -2,7 +2,7 @@ import axios, { AxiosRequestConfig } from "axios";
 import React from "react";
 
 export class MatchService {
-  BASE_URL: string;
+  BASE_URL: string | undefined;
   constructor(REACT_APP_BASE_API_URL: string | undefined) {
     console.log(
       "MatchService REACT_APP_BASE_API_URL: ",
