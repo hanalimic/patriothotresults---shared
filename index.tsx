@@ -1,8 +1,8 @@
 // export components
-export * from "./components/index";
+export * from "./src/components/index";
 
 // export interfaces
-export * from "./interfaces/index";
+export * from "./src/interfaces/index";
 
 // export services
-export * from "./services/index";
+export * from "./src/services/index";
