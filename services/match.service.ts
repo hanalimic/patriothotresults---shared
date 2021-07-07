@@ -1,9 +1,13 @@
 import axios, { AxiosRequestConfig } from "axios";
 import React from "react";
 
-class MatchService {
+export class MatchService {
   BASE_URL: string;
   constructor(REACT_APP_BASE_API_URL: string) {
+    console.log(
+      "MatchService REACT_APP_BASE_API_URL: ",
+      REACT_APP_BASE_API_URL
+    );
     this.BASE_URL = REACT_APP_BASE_API_URL;
   }
 
@@ -18,5 +22,3 @@ class MatchService {
     return await axios.get(url, headers);
   }
 }
-
-export default MatchService;

@@ -1,9 +1,11 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { sponsorsService } from '../../services/sponsors.service';
+import { SponsorsService } from '../../services/sponsors.service';
 import './sponsors.scss';
 
-export const Sponsors = () => {
+export const Sponsors = (REACT_APP_BASE_API_URL: string) => {
+  console.log('Sponsors REACT_APP_BASE_API_URL: ', REACT_APP_BASE_API_URL);
+  const sponsorsService: SponsorsService = new SponsorsService(REACT_APP_BASE_API_URL);
   const { data, status } = useQuery('sponsors', sponsorsService.getAllSponsors);
   const baseAssetsUrl = process.env.REACT_APP_BASE_ASSETS_API_URL;
   console.log('sponsors data: ', data);

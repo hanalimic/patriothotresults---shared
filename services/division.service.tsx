@@ -1,9 +1,10 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import React from 'react';
 
-class DivisionService {
+export class DivisionService {
   BASE_URL: string;
   constructor(REACT_APP_BASE_API_URL: string) {
+    console.log('DivisionService REACT_APP_BASE_API_URL: ', REACT_APP_BASE_API_URL);
     this.BASE_URL = REACT_APP_BASE_API_URL;
   }
 
@@ -20,5 +21,3 @@ class DivisionService {
     }
   }
 }
-
-export default DivisionService;
