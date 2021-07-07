@@ -3,7 +3,7 @@ import React from "react";
 
 export class MatchService {
   BASE_URL: string;
-  constructor(REACT_APP_BASE_API_URL: string) {
+  constructor(REACT_APP_BASE_API_URL: string | undefined) {
     console.log(
       "MatchService REACT_APP_BASE_API_URL: ",
       REACT_APP_BASE_API_URL

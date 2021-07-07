@@ -3,7 +3,7 @@ import React from 'react';
 
 export class SponsorsService {
   BASE_URL: string;
-  constructor(REACT_APP_BASE_API_URL: string) {
+  constructor(REACT_APP_BASE_API_URL: string | undefined) {
     console.log('SponsorsService REACT_APP_BASE_API_URL: ', REACT_APP_BASE_API_URL);
     this.BASE_URL = REACT_APP_BASE_API_URL;
   }

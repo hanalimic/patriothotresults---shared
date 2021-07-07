@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 import { SponsorsService } from '../../services/sponsors.service';
 import './sponsors.scss';
 
-export const Sponsors = (REACT_APP_BASE_API_URL: string) => {
+export const Sponsors = (REACT_APP_BASE_API_URL: string | undefined) => {
   console.log('Sponsors REACT_APP_BASE_API_URL: ', REACT_APP_BASE_API_URL);
   const sponsorsService: SponsorsService = new SponsorsService(REACT_APP_BASE_API_URL);
   const { data, status } = useQuery('sponsors', sponsorsService.getAllSponsors);
